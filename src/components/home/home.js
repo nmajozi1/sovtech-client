@@ -9,27 +9,13 @@ import './home.css';
 import { fetchCatagories, jokeByCatagory } from '../../actions/joke-action';
 
 class Home extends Component {
-
-    constructor(props) {
-        super(props);
-    }
-
-    componentWillMount() {
-        console.log(this.props);
-    }
-
-    getProps(props) {
-        console.log('PROPS: ', props)
-    }
-
     render() {
-        console.log('PROPS: ', this.props.newcatagories.data.randomJoke.value);
         return (
             <div>
                 <Container>
                     <Col className="Random-Joke-Column">
                         <div className="Random-joke-block">
-                            <h3>Select Joke Catagory on the left</h3>
+                            <h3>Select a catagory on the left</h3>
                             <hr />
                             <p>{this.props.newcatagories.data.randomJoke.value}</p>
                         </div>

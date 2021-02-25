@@ -1,6 +1,4 @@
 import { FETCH_CATAGORIES, RANDOM_JOKE } from '../actions/types';
-import { useLazyQuery, useQuery } from '@apollo/client';
-import { GET_CATAGORIES, GET_JOKE_BY_CATAGORY } from '../Graphql/Queries'
 import { gql } from '@apollo/client';
 
 import { ApolloClient, InMemoryCache } from '@apollo/client';
