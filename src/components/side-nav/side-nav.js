@@ -16,7 +16,6 @@ class SideNav extends Component {
         this.handleClick = this.handleClick.bind(this);
 
         this.state = {
-            title: '',
             catagory: ''
         };
     }

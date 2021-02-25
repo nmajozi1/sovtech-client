@@ -49,5 +49,4 @@ export const jokeByCatagory = (catagory) => dispatch => {
         type: RANDOM_JOKE,
         payload: joke
     }));
-    
 }
