@@ -7,6 +7,8 @@ import {
 } from 'react-bootstrap';
 import './home.css';
 import { fetchCatagories, jokeByCatagory } from '../../actions/joke-action';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faArrowLeft } from '@fortawesome/free-solid-svg-icons'
 
 class Home extends Component {
 
@@ -28,7 +30,7 @@ class Home extends Component {
                 <Container>
                     <Col className="Random-Joke-Column">
                         <div className="Random-joke-block">
-                            <h3>Select a catagory on the left</h3>
+                            <h3><span><FontAwesomeIcon icon={faArrowLeft} /></span> Select a catagory on the left</h3>
                             <hr />
                             <Container>
                                 <p>{this.getJoke()}</p>
