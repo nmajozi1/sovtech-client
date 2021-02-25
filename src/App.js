@@ -1,24 +1,21 @@
-import logo from './logo.svg';
+import Home from './components/home/home';
+import SideNav from './components/side-nav/side-nav';
+import { Row, Col } from 'react-bootstrap';
+import { Provider } from 'react-redux';
 import './App.css';
+
+import store from './store';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Provider store={store}>
+      <div className = "App-body">
+        <Row>
+          <Col xs={2}><SideNav /></Col>
+          <Col xs={9}><Home /></Col>
+        </Row>
+      </div>
+    </Provider>
   );
 }
 

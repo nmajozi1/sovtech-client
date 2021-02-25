@@ -1,0 +1,16 @@
+.Random-joke-block {
+    background-color: gray;
+    height: 30vh;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    color: black;
+}
+
+.Random-Joke-Column {
+    top: 50px;
+}
+
+.Random-joke-block h3 {
+    padding-top: 20px;
+}

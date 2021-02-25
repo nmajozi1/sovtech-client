@@ -1,0 +1,2 @@
+export const FETCH_CATAGORIES = 'FETCH_CATAGORIES';
+export const RANDOM_JOKE = 'RANDOM_JOKE';

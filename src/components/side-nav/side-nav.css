@@ -1,0 +1,29 @@
+.Side-nav {
+    width: 320px;
+    height: 100vh;
+    background-color: black;
+}
+
+.Nav-buttons {
+    border-bottom: solid green;
+    padding-top: 10px;
+    transition: 1s;
+}
+
+.Nav-buttons p {
+    font-size: medium;
+}
+
+.Button-container {
+    top: 50px;
+}
+
+.Nav-header {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.Nav-buttons:hover {
+    padding-top: 20px;
+    cursor: pointer;
+}
