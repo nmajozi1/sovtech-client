@@ -29,10 +29,6 @@ class SideNav extends Component {
         this.props.fetchCatagories();
     }
 
-    getJokeByCatagory() {
-        console.log('CLICKED!!');
-    }
-
     render() {
         return (
             <div className="Side-nav">
