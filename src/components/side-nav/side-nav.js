@@ -28,6 +28,18 @@ class SideNav extends Component {
         this.props.fetchCatagories();
     }
 
+    getCatagories = () => {
+        try {
+            var catagories = this.props.catagories.data.catagories;
+
+            return catagories;
+        } catch (error) {
+            var catagories = [];
+
+            return catagories;
+        }
+    }
+
     render() {
         return (
             <div className="Side-nav">
@@ -36,7 +48,7 @@ class SideNav extends Component {
                 <header className="Nav-header"><h2>Catagories</h2></header>
                     <hr />
                 </Col>
-                {this.props.catagories.data.catagories.map((item) => {
+                {this.getCatagories().map((item) => {
                     return <Col className="Nav-buttons" onClick={this.handleClick}><p id={item}>{item}</p></Col>
                 })}
                </Container>
