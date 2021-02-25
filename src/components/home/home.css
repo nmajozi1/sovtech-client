@@ -1,10 +1,12 @@
 .Random-joke-block {
-    background-color: rgb(199, 199, 199);
+    /* background-color: rgb(199, 199, 199); */
+    background-color: transparent;
     height: 30vh;
     width: 100%;
     border-radius: 10px;
     text-align: center;
     color: black;
+    opacity: 0.5;
 }
 
 .Random-Joke-Column {
