@@ -17,7 +17,9 @@ class Home extends Component {
                         <div className="Random-joke-block">
                             <h3>Select a catagory on the left</h3>
                             <hr />
-                            <p>{this.props.newcatagories.data.randomJoke.value}</p>
+                            <Container>
+                                <p>{this.props.newcatagories.data.randomJoke.value}</p>
+                            </Container>
                         </div>
                     </Col>
                 </Container>
