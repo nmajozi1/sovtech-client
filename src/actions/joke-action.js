@@ -1,4 +1,5 @@
 import { FETCH_CATAGORIES, RANDOM_JOKE } from '../actions/types';
+import { useLazyQuery, useQuery } from '@apollo/client';
 import { GET_CATAGORIES, GET_JOKE_BY_CATAGORY } from '../Graphql/Queries'
 import { gql } from '@apollo/client';
 
@@ -32,13 +33,11 @@ export const jokeByCatagory = (catagory) => dispatch => {
         cache: new InMemoryCache()
     });
 
-    catagory = 'history';
-
     client
     .query({
-        query: gql`
+        query: gql `
         query randomJoke {
-            randomJoke(catagory: "history") {
+            randomJoke(catagory: "${catagory}") {
                 value
             }
         }
